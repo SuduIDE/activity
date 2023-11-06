@@ -25,8 +25,8 @@ const initialText = "activity {\n" +
 // URL.revokeObjectURL(workerUrl);
 
 //LOCAL
-const editorApi = await import("editor.js");
-const editor = await editorApi.newEditor({containerId: "editor", workerUrl: "worker.js"});
+const editorApi = await import("./editor.js");
+const editor = await editorApi.newEditor({containerId: "editor", workerUrl: "./worker.js"});
 
 
 
